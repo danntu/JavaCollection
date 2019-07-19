@@ -2,6 +2,7 @@ package list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListExample {
@@ -19,5 +20,13 @@ public class ArrayListExample {
         System.out.println();
         numbers.remove(0);
         numbers.stream().forEach(System.out::println);
+
+        System.out.println("Iterator");
+        Iterator<Integer> iterator = numbers.iterator();
+
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
     }
 }

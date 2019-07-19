@@ -10,5 +10,14 @@ public class ArrayListExample {
 
         List<Integer> numbers = new ArrayList<Integer>(Arrays.asList(10,89,3,4,5,6,7,8));
 
+        numbers.add(200);
+        numbers.add(201);
+        numbers.stream().forEach(System.out::println);
+        System.out.println();
+        numbers.set(9,300);
+        numbers.stream().forEach(System.out::println);
+        System.out.println();
+        numbers.remove(0);
+        numbers.stream().forEach(System.out::println);
     }
 }
